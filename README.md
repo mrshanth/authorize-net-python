@@ -9,9 +9,9 @@ Will also most likely need to adjust firewalls and router configs to allow autho
 
 To get started
   
-  $ virtualenv authorize-net-python-env
-  $ source authorize-net-python-env/bin/activate
-  $ pip install -r requirements.txt
-  $ python demo.py
+    $ virtualenv authorize-net-python-env
+    $ source authorize-net-python-env/bin/activate
+    $ pip install -r requirements.txt
+    $ python demo.py
 
 
