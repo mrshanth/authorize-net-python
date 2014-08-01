@@ -45,7 +45,7 @@ def generate_fingerprint(transactionKey, loginId, sequenceNumber, timestamp, amo
     and the transactionKey that is used is NEVER sent to the client, so in theory, they have no way of reproducing
     the fingerprint.
     """
-    return hmac.new(transactionKey, "%s^%s^%s^%s^USD" % (loginId, sequenceNumber, timestamp, amount)).hexdigest()
+    return hmac.new(transactionKey, "%s^%s^%s^%s^" % (loginId, sequenceNumber, timestamp, amount)).hexdigest()
 
 
 def get_utc_timestamp_in_seconds():
