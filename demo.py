@@ -30,8 +30,11 @@ TRANSACTION_KEY = 'YOUR_TRANSACTION_KEY_HERE'
 This is your base URL.
 More than likely you will need to adjust firewall settings etc. as authorize.net will issue a POST request here.
 Can be a domain name or IP address.
+
+Must also include the scheme (http or https). For testing, HTTP is fine, but do NOT use HTTP for production. 
+You better be using HTTPS.
 """
-DOMAIN = 'YOUR_DOMAIN_OR_IP:PORT'
+DOMAIN = 'http://YOUR_DOMAIN_OR_IP:80'
 
 
 def generate_fingerprint(transactionKey, loginId, sequenceNumber, timestamp, amount):
